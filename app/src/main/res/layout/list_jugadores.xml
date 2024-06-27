@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    >
+    <!--android:animateLayoutChanges="true" -> Que exista una animacion
+        app:cardCornerRadius="20dp" -> Para el radio de las esquinas
+        app:cardElevation="4dp" -> Para darle relieve
+        app:cardUseCompatPadding="true" -> Establece un relleno compatible al carview
+    -->
+    <!-- Añadimos los elementos que van dentro de la carta -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="151dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/azul"
+        android:orientation="vertical">
+        <!-- Añadimos un relativeLayout dentro del linearLayout -->
+        <RelativeLayout
+            android:id="@+id/relativePulsable"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="6dp">
+            <!-- Añadimos un imageView dentro del relativeLayout -->
+            <ImageView
+                android:id="@+id/imageCard"
+                android:layout_width="117dp"
+                android:layout_height="132dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/baseline_person_remove_black_24dp" />
+            <!-- Añadimos un linearLayout dentro del relativeLayout -->
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/imageCard"
+                android:layout_toRightOf="@id/imageCard"
+                android:orientation="vertical">
+
+                <!-- Añadimos unos textView dentro del linearLayout -->
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Nombre"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textPosicion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Posicion"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageFav"
+                android:layout_width="wrap_content"
+                android:layout_height="128dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="277dp"
+                android:layout_marginLeft="277dp"
+                android:clickable="true"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                app:srcCompat="@drawable/favdesmarcado" />
+
+            <ImageView
+                android:id="@+id/imageFavOk"
+                android:layout_width="wrap_content"
+                android:layout_height="128dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="277dp"
+                android:layout_marginLeft="277dp"
+                android:clickable="true"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:scaleType="centerInside"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/favmarcado" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

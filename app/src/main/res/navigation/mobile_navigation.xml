@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.footballmanager_cvl.ui.home.HomeFragment"
+        android:label="Equipo"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.footballmanager_cvl.ui.gallery.GalleryFragment"
+        android:label="Convocados"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_fecha"
+        android:name="com.example.footballmanager_cvl.ui.fecha.FechaFragment"
+        android:label="Fecha"
+        tools:layout="@layout/fragment_fecha" />
+
+    <fragment
+        android:id="@+id/nav_save"
+        android:name="com.example.footballmanager_cvl.ui.save.SaveFragment"
+        android:label="Guardar"
+        tools:layout="@layout/fragment_save" />
+
+    <fragment
+        android:id="@+id/nav_historic"
+        android:name="com.example.footballmanager_cvl.ui.historic.HistoricFragment"
+        android:label="Historico"
+        tools:layout="@layout/fragment_historic" />
+
+    <fragment
+        android:id="@+id/nav_signOut"
+        android:name="com.example.footballmanager_cvl.ui.signout.SignoutFragment"
+        android:label="Cerrar sesión"
+        tools:layout="@layout/fragment_signout" />
+
+
+</navigation>

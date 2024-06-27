@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_groups_black_24dp"
+            android:title="Equipo" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/baseline_how_to_reg_black_24dp"
+            android:title="Convocados" />
+        <item
+            android:id="@+id/nav_fecha"
+            android:icon="@drawable/baseline_calendar_month_black_24dp"
+            android:title="Fecha" />
+        <item
+            android:id="@+id/nav_save"
+            android:icon="@drawable/baseline_save_black_24dp"
+            android:title="Guardar" />
+        <item
+            android:id="@+id/nav_historic"
+            android:icon="@drawable/baseline_analytics_black_24dp"
+            android:title="Histórico" />
+        <item
+            android:id="@+id/nav_signOut"
+            android:icon="@drawable/baseline_exit_to_app_black_24dp"
+            android:title="Salir" />
+    </group>
+</menu>

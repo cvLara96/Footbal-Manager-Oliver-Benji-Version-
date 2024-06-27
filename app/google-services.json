@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "525819697501",
+    "firebase_url": "https://footballmanagercvl-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "footballmanagercvl",
+    "storage_bucket": "footballmanagercvl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525819697501:android:74e4e9024c7532a7daf0b4",
+        "android_client_info": {
+          "package_name": "com.example.footballmanager_cvl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525819697501-56f71s8d0cfaf29etpl0pveq547dj26s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.footballmanager_cvl",
+            "certificate_hash": "3422fd57c6f6a4b6cfaf32aec1589c53135f1413"
+          }
+        },
+        {
+          "client_id": "525819697501-ucj2j53slrltm8n4stq820485pos72gp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.footballmanager_cvl",
+            "certificate_hash": "5b3c41d6f652da28a784d408f6b17c56f43ede46"
+          }
+        },
+        {
+          "client_id": "525819697501-2tn97tnovtighavekm64c9a5ibgi1rkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPeGJPQj8-KdGUHuuuVUaUgLHTEiTjDCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525819697501-2tn97tnovtighavekm64c9a5ibgi1rkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
